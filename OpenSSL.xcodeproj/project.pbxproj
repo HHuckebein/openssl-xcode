@@ -91,7 +91,7 @@
 		5D129C06196F111E0071CCBD /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
-			dstPath = "";
+			dstPath = "$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
 				5D129C07196F113A0071CCBD /* aes.h in CopyFiles */,
@@ -256,7 +256,7 @@
 		5D1F6888196E660A00020D12 /* x509.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509.h; sourceTree = "<group>"; };
 		5D1F6889196E660A00020D12 /* x509_vfy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509_vfy.h; sourceTree = "<group>"; };
 		5D1F688A196E660A00020D12 /* x509v3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509v3.h; sourceTree = "<group>"; };
-		9069D28C0FCE659A0042E34C /* libcrypto.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcrypto.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9069D28C0FCE659A0042E34C /* libOpenSSL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOpenSSL.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -357,7 +357,7 @@
 		9069D25C0FCE62420042E34C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9069D28C0FCE659A0042E34C /* libcrypto.a */,
+				9069D28C0FCE659A0042E34C /* libOpenSSL.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -378,7 +378,7 @@
 			);
 			name = crypto;
 			productName = crypto;
-			productReference = 9069D28C0FCE659A0042E34C /* libcrypto.a */;
+			productReference = 9069D28C0FCE659A0042E34C /* libOpenSSL.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -474,7 +474,7 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INSTALL_PATH = /usr/local/lib;
-				PRODUCT_NAME = crypto;
+				PRODUCT_NAME = OpenSSL;
 				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
@@ -488,7 +488,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
 				INSTALL_PATH = /usr/local/lib;
-				PRODUCT_NAME = crypto;
+				PRODUCT_NAME = OpenSSL;
 				USER_HEADER_SEARCH_PATHS = "";
 				ZERO_LINK = NO;
 			};
